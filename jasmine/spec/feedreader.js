@@ -1,18 +1,6 @@
-/* feedreader.js
- *
- * This is the spec file that Jasmine will read and contains
- * all of the tests that will be run against your application.
- */
 
-/* We're placing all of our tests within the $() function,
- * since some of these tests may require DOM elements. We want
- * to ensure they don't run until the DOM is ready.
- */
 $(function() {
-    /* This is our first test suite - a test suite just contains
-    * a related set of tests. This suite is all about the RSS
-    * feeds definitions, the allFeeds variable in our application.
-    */
+  
     describe('RSS Feeds', function() {
         /* This is our first test - it tests to make sure that the
          * allFeeds variable has been defined and that it is not
@@ -33,13 +21,9 @@ $(function() {
          */
 
          it('Has URL defined and URL is not empty', function(){
-            //  allFeeds.forEach(function(feeds){
-            //     expect(feeds.name).toBeDefined();
-            //     expect(feeds.name.length).not.toBe(0);
-            //  })
             for (feeds of allFeeds){
                 expect(feeds.name).toBeDefined();
-                 expect(feeds.name.length).not.toBe(0);
+                expect(feeds.name.length).not.toBe(0);
             }
          })
 
@@ -48,11 +32,7 @@ $(function() {
          * and that the name is not empty.
          */
         it('Has name defined and they are not empty', function(){
-        //     allFeeds.forEach(function(feeds) {
-        //         expect(feeds.name).toBeDefined();
-        //         expect(feeds.name.length).not.toBe(0);
-        // })
-        for (feedsInfo of allFeeds ){
+     for (feedsInfo of allFeeds ){
             expect(feeds.name).toBeDefined();
              expect(feeds.name.length).not.toBe(0);
         }
@@ -92,23 +72,6 @@ $(function() {
 
     })
      
-        // describe("Initial Entries", function(){
-
-        //     const feed = document.querySelector('.feed')
-        //     const entry = document.querySelector('.entry')
-        //     beforeEach(function(done){
-        //         loadFeed(0,function(){
-        //             done();
-        //         })
-        //     })
-
-        //     it('there is at least single entry', function(){
-        //         expect(feed.length).toBeGreaterThan(0)
-        //         expect(entry.length).toBeGreaterThan(0)
-                
-        //     })
-
-        // })
         describe("Initial Entries", function () {
           
             
