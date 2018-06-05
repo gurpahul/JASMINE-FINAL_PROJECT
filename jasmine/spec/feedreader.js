@@ -105,10 +105,10 @@ $(function () {
 
         beforeEach(function (done) {
             loadFeed(1, function () {
-
+                done()
             })
         })
-
+        it("it should be different from the first one")
     })
     /* TODO: Write a new test suite named "New Feed Selection" */
 
